@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+
+<a-assets>
+                <img id="texture" src="./assets/images/bushes.jpg">
+                <img id="texture2" src="./assets/images/sol.jpg">
+                 <a-asset-item id="mtl-cake" src="./3dmodels/Cake.mtl"></a-asset-item>
+                <a-asset-item id="obj-cake" src="./3dmodels/Cake.obj"></a-asset-item>
+            </a-assets>
+
+    <a-plane
+      position="0 0 -1.25"
+      rotation="-90 0 0"
+      width="4"
+      height="4"
+      material="src: #texture2; repeat: 5 5"
+     color="#54524F">
+    </a-plane>
+
+
+<!-- murs éxterieurs-->
+    <a-box
+material="src: #texture; repeat: 5 2"
+      position="0 0.25 -3.26"
+      width="4"
+      height="0.5"
+      depth="0.1"
+      scale="1 1.13 3">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="-2 0.25 -0.77475"
+     width="0.1" 
+     height="0.5" 
+     depth="4" 
+     scale="3 1.13 0.84">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="1.9485 0.25 -1.24875" 
+    width="0.1" 
+    height="0.5" 
+    depth="4" 
+    scale="3 1.13 1.08">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="-0.14625 0.25 0.75775"
+    width="4" 
+    height="0.5" 
+    depth="0.1" 
+    scale="0.87 1.13 3">
+    </a-box>
+
+     <a-box 
+     material="src: #texture; repeat: 5 2"
+     position="1.71775 0.3545 0.76025"
+      width="4" 
+      height="0.5" 
+      depth="0.1" 
+      scale="0.12 0.71 3">
+    </a-box>
+<!-- murs éxterieurs-->
+
+
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="-1.04825 0.24325 -2.3015" 
+    width="1.5" 
+    height="0.5"
+     depth="0.1" 
+     scale="1.44 1.13 3">
+    </a-box>
+
+  <a-box 
+  material="src: #texture; repeat: 5 2"
+  position="-1.35875 0.25 -0.29775" 
+  width="0.1" 
+  height="1.25" 
+  depth="1" 
+  geometry="depth: 1.775" 
+  scale="3 0.45 1.22">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="1.2165 0.2305 -2.388" 
+    width="0.0875" 
+    height="0.4825" 
+    depth="1" 
+    geometry="depth: 1.63" 
+    scale="3 1.13 1.12">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="0.63525 0.246 -0.7835"
+     width="1.25" 
+     height="0.5" 
+     depth="0.1" 
+      scale="2.01 1.13 3">
+    </a-box>
+
+   <a-box
+   material="src: #texture; repeat: 5 2"
+   position="0.41025 0.25 -1.6265" 
+   height="0.4475"
+   width="1.735"
+   depth="0.1" 
+    geometry="depth: 0.065"
+    scale="1 1.13 4.7">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="-0.614 0.26625 -0.43225"
+     width="0.1" 
+     height="1.25" 
+     depth="1" 
+     scale="3 0.42 1">
+    </a-box>
+
+    <a-box 
+    material="src: #texture; repeat: 5 2"
+    position="0.53975 0.26625 0.2625"
+     width="0.1" 
+     height="1.25" 
+     depth="1" 
+     scale="3 0.42 1">
+    </a-box>
+
+    <a-entity
+      camera
+      position="-1.74775 0.2985 -2.76875"
+      wasd-controls
+      look-controls>
+    </a-entity>
+
+   <a-entity 
+    id="cake" 
+    position="1.542 -0.004 -0.425" 
+    obj-model="mtl: #mtl-cake; obj: #obj-cake" 
+    scale="0.003 0.003 0.003">
+</a-entity>
+
+<a-entity 
+    id="cake" 
+    position="1.542 -0.004 -0.425" 
+    obj-model="mtl: #mtl-cake; obj: #obj-cake"
+    scale="0.003 0.003 0.003">
+  </a-entity>
+
+  </a-scene>
+</body>
+</html>
