@@ -4,4 +4,4 @@
 
 ### AFRAME
 
-*[labyrinthe](./labyrinthe/labyrinthe/aframe.html)
+*[labyrinthe](./labyrinth/aframe.html)
